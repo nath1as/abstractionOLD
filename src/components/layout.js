@@ -10,7 +10,7 @@ class Template extends React.Component {
     return (
     <div>
       <div className="title text-center" >ABSTRACTION</div>
-      <div className="blogposts"> {children} </div>
+      <div className="blogposts scroll-container" > {children} </div>
     </div>
     )
   }

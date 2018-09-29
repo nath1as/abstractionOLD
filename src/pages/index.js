@@ -26,6 +26,8 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
+
+
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   <div key={node.fields.slug}>
                     <small className="date">{node.frontmatter.date}</small>

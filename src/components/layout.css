@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P');
+
 * {
   margin: 0;
   padding: 0;
    }
 
-
-html { overflow-y: hidden; }
+/* html { overflow-y: hidden; } */
 
 body {
   background-color: black;
+  background-color: #080707;
   color: #ffffff;
 }
 
@@ -17,68 +19,41 @@ a {
   outline:none;
 }
 
-.title {
-    font-family: 'I pixel U';
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    -webkit-text-stroke: 3px white;
-    position: fixed;
-    top: 0rem;
-    padding: 2rem;
-    background-color: black;
-    border-bottom: 0.2rem dashed white;
-
-    z-index: 9999;
-    width: 80%;
-    text-transform: uppercase;
-    color: #000000;
-    font-size: 6vw;
-    letter-spacing: 1.2vw;
-    font-weight: 900;
-    text-shadow: 0 1px 0 #000000, -1px -1px 0 #000000, /*main 3d shadow*/ -1px 0px 0 #000000, -2px 1px 0 #000000, -3px 2px 0 #000000, -4px 3px 0 #000000, -5px 4px 0 #000000, -6px 5px 0 #000000, -7px 6px 0 #000000, -8px 7px 0 #000000, -9px 8px 0 #000000, -10px 9px 0 #000000, -11px 10px 0 #000000, -12px 11px 0 #000000, -13px 12px 0 #000000, -14px 13px 0 #000000, -15px 14px 0 #000000, -16px 15px 0 #000000, /*top right*/ 0 -1px 1px white, 0 -2px 0px white, /*bottom left corner*/ -15px 14px 0px white, -16px 15px 0px white, -17px 16px 0px white, -18px 17px 0px white, -2px -1px 0 white, -3px 0px 0 white, /*top left corner*/ -19px 15px 0 white, -18px 14px 0 white, -17px 13px 0 white, -16px 12px 0 white, -15px 11px 0 white, -14px 10px 0 white, -13px 9px 0 white, -12px 8px 0 white, -11px 7px 0 white, -10px 6px 0 white, -9px 5px 0 white, -8px 4px 0 white, -7px 3px 0 white, -6px 2px 0 white, -5px 1px 0 white, -4px 0px 0 white, /*lower right / (upper right side for capital T like H etc letters. */ 0px 2px 0px white, -1px 3px 0px white, -2px 4px 0px white, -3px 5px 0px white, -4px 6px 0px white, -5px 7px 0px white, -6px 8px 0px white, -7px 9px 0px white, -8px 10px 0px white, -9px 11px 0px white, -10px 12px 0px white, -11px 13px 0px white, -12px 14px 0px white, -13px 15px 0px white, -14px 16px 0px white, -15px 17px 0px white;
-}
 
 .blogposts:nth-child(n) {
   position: relative;
-  top: 17rem;
-  margin-left: 13%;
-  margin-right: 13%;
+  top: 11rem;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-bottom: 0;
   padding: 6rem;
   /* border-left: 0.2rem solid white; */
   /* border-right: 0.2rem solid white; */
 }
+
 .blogposts a div {
 
   border: 0.1rem solid white;
   border-radius: 20px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  margin: 2.5rem 20% 0;
-  max-width: 60%;
-  text-align: center;
+  margin: auto;
+  margin: 2em 15% 0; */
+  max-width: 80%;
+  /* text-align: center; */
 
-  border-left: 0.2rem solid white;
-  border-right: 0.2rem solid white;
+  /* border-left: 0.2rem solid white; */
+  /* border-right: 0.2rem solid white; */
 }
 
 .blogposts a div:hover {
-  /* background-color: #ffffff; */
+  background-color: #000000;
   /* color: black; */
   position: relative;
-  right: 0.2rem;
-  top: 0.2rem;
+  right: 0.1rem;
+  top: 0.1rem;
 }
 
-/* .edge { */
-/*   border: none !important; */
-/*   position: relative; */
-/*   text-align: left; */
-/*   float: left; */
-/*   right: 30%; */
-/*   /1* bottom: 53%; *1/ */
-/* } */
 
 .date {
   position: relative;
@@ -89,24 +64,27 @@ a {
 }
 
 .postTitle {
-  font-family: 'I pixel U';
-  font-size: 2rem;
-  width: 40%;
+  /* font-family: 'Press Start 2P'; */
+  font-family: 'Iceland';
+  /* text-transform: lowercase; */
+  font-size: 2.3rem;
+  text-align: center;
+  width: 66%;
   margin: 1.5rem auto;
   padding: 0.5rem;
   border-bottom: 0.18rem solid white;
 }
 
 .contentTitle {
-  font-family: 'I pixel U';
+  /* font-family: 'Press Start 2P'; */
+  font-family: 'Iceland';
   font-size: 5rem;
-  margin-top: -4rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .contentDate {
-  position: relative;
-  left: 10rem;
-
+  margin-top: 1rem;
+  display:block;
 }
 .contentPost {
 
@@ -115,6 +93,9 @@ a {
   font-size: 1.2rem;
 }
 
+.postContent:first-letter {
+  margin-left: 4rem;
+}
 
 
 /* .blogposts a div:after { */
@@ -125,3 +106,25 @@ a {
 /*   bottom: 14rem; */
 /*   /1* visibility: hidden; *1/ */
 /* } */
+
+.title {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-text-stroke: 3px white;
+    position: fixed;
+    top: 0rem;
+    padding: 2rem;
+    background-color: #080707;
+    border-bottom: 0.2rem dashed white;
+
+    z-index: 9999;
+    width: 80%;
+    text-transform: lowercase;
+    color: #080707;
+    font-size: 4.5vw;
+    letter-spacing: 1.2vw;
+    font-weight: 900;
+    text-shadow: 0 1px 0 #000000, -1px -1px 0 #000000, /*main 3d shadow*/ -1px 0px 0 #000000, -2px 1px 0 #000000, -3px 2px 0 #000000, -4px 3px 0 #000000, -5px 4px 0 #000000, -6px 5px 0 #000000, -7px 6px 0 #000000, -8px 7px 0 #000000, -9px 8px 0 #000000, -10px 9px 0 #000000, -11px 10px 0 #000000, -12px 11px 0 #000000, -13px 12px 0 #000000, -14px 13px 0 #000000, -15px 14px 0 #000000, -16px 15px 0 #000000, /*top right*/ 0 -1px 1px white, 0 -2px 0px white, /*bottom left corner*/ -15px 14px 0px white, -16px 15px 0px white, -17px 16px 0px white, -18px 17px 0px white, -2px -1px 0 white, -3px 0px 0 white, /*top left corner*/ -19px 15px 0 white, -18px 14px 0 white, -17px 13px 0 white, -16px 12px 0 white, -15px 11px 0 white, -14px 10px 0 white, -13px 9px 0 white, -12px 8px 0 white, -11px 7px 0 white, -10px 6px 0 white, -9px 5px 0 white, -8px 4px 0 white, -7px 3px 0 white, -6px 2px 0 white, -5px 1px 0 white, -4px 0px 0 white, /*lower right / (upper right side for capital T like H etc letters. */ 0px 2px 0px white, -1px 3px 0px white, -2px 4px 0px white, -3px 5px 0px white, -4px 6px 0px white, -5px 7px 0px white, -6px 8px 0px white, -7px 9px 0px white, -8px 10px 0px white, -9px 11px 0px white, -10px 12px 0px white, -11px 13px 0px white, -12px 14px 0px white, -13px 15px 0px white, -14px 16px 0px white, -15px 17px 0px white;
+}

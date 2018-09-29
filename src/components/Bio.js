@@ -14,7 +14,7 @@ class Bio extends React.Component {
           marginBottom: rhythm(2.5),
         }}
       >
-        <p> author: {  }
+        <p>⌥&nbsp;  {  }
           <a href="https://nathias.id">
             nathias
           </a>
