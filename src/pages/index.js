@@ -23,11 +23,12 @@ class BlogIndex extends React.Component {
 
   render() {
     const Menu = () =>
-          <div className="menu">
+          <menu className="menu">
             <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
+            <div className="topback"></div>
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
-                  <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís</button>
-          </div>
+                  <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís </button>
+          </menu>
 
 
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -35,8 +36,6 @@ class BlogIndex extends React.Component {
     const siteTags = get(this, 'props.data.site.siteMetadata.tags')
     const siteDescription = get( this, 'props.data.site.siteMetadata.description')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    // const dec = this.props.decide;
-    // const decide = false;
     const decide = this.state.decide;
     
     if (decide === 'theory') {
@@ -50,17 +49,15 @@ class BlogIndex extends React.Component {
           const category = get(node, 'frontmatter.category') || node.fields.slug
           const tags = get(node, 'frontmatter.tags') || node.fields.slug
           return (
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
                     <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                     <h4>{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
-
                   </div>
                 </Link>
-
           )
         })}
       </Layout>

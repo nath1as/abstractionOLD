@@ -10,7 +10,10 @@
 body {
   background-color: #080707;
   color: #F2F2F2;
-  /* background-color: pink; */
+  /* background: url("../../../Pictures/hbz9kbylhixy.png") top right no-repeat ; */
+  /* background-attachment:fixed; */
+  background-size:100%;
+
 }
 
 a {
@@ -19,45 +22,45 @@ a {
   outline:none;
 }
 
+blockquote {
+  color: #F2F2F2;
+  color: white;
+  font-size: 1.7rem;
+}
 
-.blogposts:nth-child(n) {
-  position: relative;
-  top: 11rem;
-  margin-left: 10%;
-  margin-right: 10%;
+.blogposts:nth-child(n+1) {
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 0;
-  padding: 4rem 10rem;
-  background-color: #080707;
+  padding: 4rem 8rem;
+  /* background-color: #080707; */
   /* border-left: 0.2rem solid #F2F2F2; */
   /* border-right: 0.2rem solid #F2F2F2; */
+  margin: 3rem 18% 0;
+  margin-top: 12rem;
 }
 
 .blogposts a div {
-
   background-color: #080707;
-  border: 0.12rem solid #F2F2F2;
+  background-color: #000000;
+  border: 0.18rem solid #000;
   border-radius: 20px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  margin: auto;
-  margin: 2em 15% 0; */
-  max-width: 80%;
-  z-index: 1;
-  overflow: hidden;
+  margin-bottom: 3rem;
   /* text-align: center; */
 
   /* border-left: 0.2rem solid #F2F2F2; */
-  /* border-right: 0.2rem solid #F2F2F2; */
 }
 
 .blogposts a div:hover {
   background-color: #000000;
   color: #ffffff;
-  border: 0.18rem solid #ffffff; */
-  /* color: black; */
+  border: 0.18rem solid #111;
   position: relative;
   right: 0.1rem;
   top: 0.1rem;
+  box-shadow: -0.2rem 0.1rem #111;
 }
 
 
@@ -95,7 +98,6 @@ a {
 }
 .contentPost {
   font-size: 1.3rem;
-  color:pink;
 }
 .postContent {
   font-size: 1.2rem;
@@ -146,20 +148,27 @@ a {
   font-size: 1rem;
 }
 
-.menu {
-  /* border: 2px solid red; */
-  position: fixed;
-  z-index: 90;
-  /* background-color: magenta; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  top: 23rem;
-  outline:none;
+/* .menu { */
+/*   border: 2px solid red; */
+/*   position: fixed; */
+/*   z-index: 0; */
+/*   /1* background-color: magenta; *1/ */
+/*   width: 100%; */
+/*   display: flex; */
+/*   justify-content: center; */
+/*   top: 23rem; */
+/*   outline:none; */
+/* } */
+.topback {
+    position: fixed;
+    top: 0;
+    background-color: #080707;
+    width: 100%;
+    height: 13.4rem;
 }
-
 .title {
-    font-family: 'Press Start 2P';
+    /* font-family: 'Press Start 2P'; */
+    font-family: 'I pixel U';
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -168,9 +177,9 @@ a {
     top: 0rem;
     padding: 2rem;
     background-color: #080707;
-    border-bottom: 0.2rem dashed #F2F2F2;
+    border-bottom: 0.2rem solid #F2F2F2;
 
-    z-index: 98;
+    z-index: 998;
     width: 80%;
     text-transform: lowercase;
     color: #080707;
@@ -181,10 +190,11 @@ a {
 }
 
 .title:hover {
+  padding-right: 2.3rem;
+  cursor: pointer;
   color: #000000;
     text-shadow: 0 1px 0 #000000, -1px -1px 0 #000000, /*main 3d shadow*/ -1px 0px 0 #000000, -2px 1px 0 #000000, -3px 2px 0 #000000, -4px 3px 0 #000000, -5px 4px 0 #000000, -6px 5px 0 #000000, -7px 6px 0 #000000, -8px 7px 0 #000000, -9px 8px 0 #000000, -10px 9px 0 #000000, -11px 10px 0 #000000, -12px 11px 0 #000000, -13px 12px 0 #000000, -14px 13px 0 #000000, -15px 14px 0 #000000, -16px 15px 0 #000000, /*top right*/ 0 -1px 1px #FFFFFF, 0 -2px 0px #FFFFFF, /*bottom left corner*/ -15px 14px 0px #FFFFFF, -16px 15px 0px #FFFFFF, -17px 16px 0px #FFFFFF, -18px 17px 0px #FFFFFF, -2px -1px 0 #FFFFFF, -3px 0px 0 #FFFFFF, /*top left corner*/ -19px 15px 0 #FFFFFF, -18px 14px 0 #FFFFFF, -17px 13px 0 #FFFFFF, -16px 12px 0 #FFFFFF, -15px 11px 0 #FFFFFF, -14px 10px 0 #FFFFFF, -13px 9px 0 #FFFFFF, -12px 8px 0 #FFFFFF, -11px 7px 0 #FFFFFF, -10px 6px 0 #FFFFFF, -9px 5px 0 #FFFFFF, -8px 4px 0 #FFFFFF, -7px 3px 0 #FFFFFF, -6px 2px 0 #FFFFFF, -5px 1px 0 #FFFFFF, -4px 0px 0 #FFFFFF, /*lower right / (upper right side for capital T like H etc letters. */ 0px 2px 0px #FFFFFF, -1px 3px 0px #FFFFFF, -2px 4px 0px #FFFFFF, -3px 5px 0px #FFFFFF, -4px 6px 0px #FFFFFF, -5px 7px 0px #FFFFFF, -6px 8px 0px #FFFFFF, -7px 9px 0px #FFFFFF, -8px 10px 0px #FFFFFF, -9px 11px 0px #FFFFFF, -10px 12px 0px #FFFFFF, -11px 13px 0px #FFFFFF, -12px 14px 0px #FFFFFF, -13px 15px 0px #FFFFFF, -14px 16px 0px #FFFFFF, -15px 17px 0px #FFFFFF;
     /* padding-top: 2.08rem; */
-    font-size: 4.52vw;
 }
 
 .tags {
@@ -214,27 +224,89 @@ a {
 }
 
 .theory {
-  position: relative;
-  margin-right: 35%;
-  margin-left: 35%;
-  text-decoration: none; 
-  border: none;
-  background: none;
-  font-family: 'Iceland';
-  font-size: 3rem;
-}
-
-.praxis {
-  margin-right: 35%;
-  margin-left: 35%;
+  margin-left: 10%;
+  position: fixed;
+  top: 24rem;
   text-decoration: none;
   border: none;
   background: none;
   font-family: 'Iceland';
   font-size: 3rem;
+  border-radius: 20px;
 }
-.all {
-  /* margin-right: 15%; */
-  /* margin-left: 15%; */
+
+.praxis {
+  position: fixed;
+  top: 24rem;
+  right: 10%;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: 'Iceland';
+  font-size: 3rem;
+  border-radius: 20px;
 }
 /* separate div for the text then only move text on hover */
+.praxis {
+  padding: 0;
+  width: auto;
+  text-align: center;
+  transition-property: transform;
+  transition: 0.35s ease;
+}
+.praxis::after {
+  content: '';
+  border-top: 4px solid #fff;
+  border-radius: 1px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  transform: rotateY(90deg);
+  transition-property: transform;
+  transition: 0.25s linear;
+}
+.praxis:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.praxis:hover::after {
+  transform: rotate(0deg);
+}
+.praxis {
+  transform-origin: left 50%;
+}
+.praxis::after {
+  transform-origin: left 2px;
+}
+
+.theory {
+  padding: 0;
+  width: auto;
+  text-align: center;
+  transition-property: transform;
+  transition: 0.35s ease;
+}
+.theory::after {
+  content: '';
+  border-top: 4px solid #fff;
+  border-radius: 1px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  transform: rotateY(90deg);
+  transition-property: transform;
+  transition: 0.25s linear;
+}
+.theory:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.theory:hover::after {
+  transform: rotate(0deg);
+}
+.theory {
+  transform-origin: left 50%;
+}
+.theory::after {
+  transform-origin: left 2px;
+}
