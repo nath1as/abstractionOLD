@@ -10,6 +10,7 @@
 body {
   background-color: #080707;
   color: #F2F2F2;
+  /* background-color: pink; */
 }
 
 a {
@@ -34,7 +35,7 @@ a {
 .blogposts a div {
 
   background-color: #080707;
-  border: 0.1rem solid #F2F2F2;
+  border: 0.12rem solid #F2F2F2;
   border-radius: 20px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -52,7 +53,7 @@ a {
 .blogposts a div:hover {
   background-color: #000000;
   color: #ffffff;
-  border: 0.15rem solid #ffffff; */
+  border: 0.18rem solid #ffffff; */
   /* color: black; */
   position: relative;
   right: 0.1rem;
@@ -144,6 +145,19 @@ a {
   font-family: 'Iceland';
   font-size: 1rem;
 }
+
+.menu {
+  /* border: 2px solid red; */
+  position: fixed;
+  z-index: 90;
+  /* background-color: magenta; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 23rem;
+  outline:none;
+}
+
 .title {
     font-family: 'Press Start 2P';
     text-align: center;
@@ -156,7 +170,7 @@ a {
     background-color: #080707;
     border-bottom: 0.2rem dashed #F2F2F2;
 
-    z-index: 9999;
+    z-index: 98;
     width: 80%;
     text-transform: lowercase;
     color: #080707;
@@ -191,5 +205,36 @@ a {
   position: relative;
   top: 1rem;
   right: 1rem;
+}
+
+.buttons {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.theory {
+  position: relative;
+  margin-right: 35%;
+  margin-left: 35%;
+  text-decoration: none; 
+  border: none;
+  background: none;
+  font-family: 'Iceland';
+  font-size: 3rem;
+}
+
+.praxis {
+  margin-right: 35%;
+  margin-left: 35%;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: 'Iceland';
+  font-size: 3rem;
+}
+.all {
+  /* margin-right: 15%; */
+  /* margin-left: 15%; */
 }
 /* separate div for the text then only move text on hover */

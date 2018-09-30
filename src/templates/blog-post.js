@@ -12,8 +12,14 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+   const Abstraction = () =>
+        <div className="title" >ABSTRACTION</div>
 
     return (
+    <div>
+      <Link to={"/"} >
+      <Abstraction />
+      </Link>
       <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
@@ -59,6 +65,7 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
       </Layout>
+    </div>
     )
   }
 }
