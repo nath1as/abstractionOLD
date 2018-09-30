@@ -8,6 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+
     resolve(
       graphql(
         `
@@ -20,6 +21,8 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    category
+                    tags
                   }
                 }
               }

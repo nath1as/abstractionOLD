@@ -20,8 +20,10 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+        <div className="contentAll">
         <h1 className="contentTitle">{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1 className="contentTitle">{post.frontmatter.category}</h1>
+        <div className="contentPost" dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -29,6 +31,7 @@ class BlogPostTemplate extends React.Component {
         />
         <p className="contentDate" > {post.frontmatter.date} </p>
         <Bio />
+      </div>
         <ul
           style={{
             display: 'flex',
@@ -77,6 +80,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        category
+        tags
       }
     }
   }

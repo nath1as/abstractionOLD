@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { rhythm, scale } from '../utils/typography'
 import "./layout.css"
 
 class Template extends React.Component {
@@ -10,7 +9,7 @@ class Template extends React.Component {
     return (
     <div>
       <Link to={'/'}> <div className="title text-center" >ABSTRACTION</div> </Link>
-      <div className="blogposts scroll-container" > {children} </div>
+      <div className="blogposts" > {children} </div>
     </div>
     )
   }
