@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P|Montserrat|Righteous|Audiowide|Nova+Flat');
+@import url('https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P|Montserrat|Volkhov|Audiowide|Nova+Flat');
 
 * {
   margin: 0;
@@ -8,24 +8,23 @@
 /* html { overflow-y: hidden; } */
 
 body {
-  background-color: #080707;
+  background-color: #070707;
   /* background-color: purple; */
-  color: #F2F2F2;
-  /* background: url("../../../Pictures/spectogramstar.jpg") bottom right no-repeat ; */
-  /* background-attachment:fixed; */
+  color: #E3E3E3;
+  background: url("../../../../Pictures/nebulablue.jpg") top right no-repeat ;
+  background-attachment: fixed;
   background-size:100%;
 
 }
 
 a {
   text-decoration: none;
-  color: #F2F2F2;
+  color: #E3E3E3;
   outline:none;
 }
 
 blockquote {
-  color: #F2F2F2;
-  color: white;
+  color: #E3E3E3;
   font-size: 1.7rem;
 }
 
@@ -33,22 +32,58 @@ blockquote {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0;
-  padding: 4rem 8rem;
-  /* background-color: #080707; */
+  padding: 4rem 6rem;
+  /* background-color: #070707; */
   /* border-left: 0.2rem solid #F2F2F2; */
   /* border-right: 0.2rem solid #F2F2F2; */
   margin: 3rem 23% 0;
-  margin-top: 12rem;
+  margin-top: 9rem;
 }
 
+
+.contentAll {
+  margin: 0;
+  bottom: 14rem;
+  padding: 10rem;
+  width: 200%;
+  position: relative;
+  right: 50%;
+  background-color: #070707;
+  overflow: hidden;
+  /* border-left: 0.2rem solid #F2F2F2; */
+  /* border-right: 0.2rem solid #F2F2F2; */
+}
+.content-foot {
+  height: 100%;
+
+  margin: 0;
+  bottom: 14rem;
+  padding: 10rem;
+  width: 200%;
+  height: 8rem;
+  position: relative;
+  right: 50%;
+  text-align: center;
+  background-color: #070707;
+
+}
+
+.previous {
+  position: relative;
+  left: 15rem;
+}
+.next {
+  position: relative;
+  right: 15rem;
+}
 .blogposts a div {
-  background-color: #080707;
-  background-color: #000000;
+  background-color: #070707;
   border: 0.18rem solid #000;
   border-radius: 20px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   margin-bottom: 3rem;
+  z-index: 100;
   /* text-align: center; */
 
   /* border-left: 0.2rem solid #F2F2F2; */
@@ -56,12 +91,12 @@ blockquote {
 
 .blogposts a div:hover {
   background-color: #000000;
-  color: #ffffff;
-  border: 0.18rem solid #111;
+  color: #E3E3E3;
+  border: 0.18rem solid #070707;
   position: relative;
   right: 0.1rem;
   top: 0.1rem;
-  box-shadow: -0.2rem 0.1rem #111;
+  box-shadow: -0.2rem 0.1rem #070707;
 }
 
 
@@ -78,23 +113,25 @@ blockquote {
   /* font-family: 'Press Start 2P'; */
   /* font-family: 'Iceland'; */
   /* font-family: 'Press Start 2P'; */
-    font-family: 'Audiowide';
+    font-family: 'Volkhov';
 
-  /* text-transform: lowercase; */
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
   font-size: 1.2rem;
   text-align: center;
   width: 50%;
   margin: 1.5rem auto;
   padding: 0.5rem;
   border-bottom: 0.1rem solid #F2F2F2;
+  transform: scale(1, .95);
 }
 
 .contentTitle {
   /* font-family: 'Press Start 2P'; */
-  /* font-family: 'Iceland'; */
-  font-size: 5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  font-family: 'Volkhov';
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
 }
 .contentDate {
   margin-top: 1rem;
@@ -108,14 +145,9 @@ blockquote {
   font-size: 1rem;
 }
 
-/* .contentAll { */
-/*   font-size: 1.5rem; */
-/*   padding: 3rem; */
-/*   border: 2px solid white; */
-/* } */
-
 .postContent:first-letter {
   margin-left: 4rem;
+
 }
 
 
@@ -129,28 +161,28 @@ blockquote {
 /* } */
 
  h1 {
-  font-family: 'Iceland';
+  font-family: 'Volkhov';
   font-size: 2rem;
 }
 
  h2 {
-  font-family: 'Iceland';
+  font-family: 'Volkhov';
   font-size: 2.5rem;
 }
 
  h3 {
-  font-family: 'Iceland';
+  font-family: 'Volkhov';
   font-size: 2rem;
 }
 
  h4 {
-  font-family: 'Iceland';
+  font-family: 'Volkhov';
   font-size: 1.5rem;
 }
 
  h5 {
-  font-family: 'Iceland';
-  font-size: 1rem;
+  font-family: 'Volkhov';
+  font-size: 1.5rem;
 }
 
 /* .menu { */
@@ -166,41 +198,41 @@ blockquote {
 /* } */
 .topback {
     position: fixed;
-    top: 0;
-    /* background-color: #080707; */
     width: 100%;
     top: 7.4rem;
     z-index: 999;
 }
 .title {
     /* font-family: 'Press Start 2P'; */
-    /* font-family: 'I pixel U'; */
-    font-family: 'Audiowide';
+    font-family: 'Volkhov';
+    transform: scale(1, .95);
+    font-size: 2.3vw;
+    letter-spacing: 1.1vw;
+    font-weight: 100;
+    /* font-family: 'Audiowide'; */
     /* font-family:'Libre Baskerville'; */
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    -webkit-text-stroke: 3px #F2F2F2;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* -webkit-text-stroke: 3px #F2F2F2; */
     position: fixed;
-    top: 0rem;
-    padding: 2rem;
-    background-color: #080707;
-    /* border-bottom: 0.12rem solid #F2F2F2; */
+    top: 2rem;
+    height: 5.65rem;
+    /* background-color: #070707; */
+    border-bottom: 0.19rem solid #F2F2F2;
 
     z-index: 998;
-    width: 80%;
+    width: 50%;
     /* text-transform: lowercase; */
-    color: #080707;
+    color: #070707;
     /* color: rgba(0, 0, 0, 0.1); */
-    font-size: 2.3vw;
-    letter-spacing: 1.2vw;
-    font-weight: 900;
+    color: #E3E3E3;
 }
 
 .title:hover {
-  padding-right: 2.3rem;
   cursor: pointer;
-  color: #000000;
+  font-size: 2.32vw;
+  color: #fff;
     /* padding-top: 2.08rem; */
 }
 
@@ -240,7 +272,7 @@ blockquote {
   border: none;
   background: none;
   font-family: 'Iceland';
-  font-size: 3rem;
+  font-size: 2.3rem;
   border-radius: 20px;
 }
 
@@ -252,7 +284,7 @@ blockquote {
   border: none;
   background: none;
   font-family: 'Iceland';
-  font-size: 3rem;
+  font-size: 2.3rem;
   border-radius: 20px;
 }
 /* separate div for the text then only move text on hover */
@@ -265,7 +297,8 @@ blockquote {
 }
 .praxis::after {
   content: '';
-  border-top: 4px solid #fff;
+  border-top: 4px solid #E3E3E3;
+
   border-radius: 1px;
   width: 100%;
   position: absolute;
@@ -297,7 +330,8 @@ blockquote {
 }
 .theory::after {
   content: '';
-  border-top: 4px solid #fff;
+  border-top: 4px solid #E3E3E3;
+
   border-radius: 1px;
   width: 100%;
   position: absolute;
@@ -337,8 +371,8 @@ blockquote {
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
-  -webkit-animation: animatedgradient 3s ease alternate infinite;
-          animation: animatedgradient 3s ease alternate infinite;
+  -webkit-animation: animatedgradient 10s ease alternate infinite;
+          animation: animatedgradient 10s ease alternate infinite;
   background-size: 300% 300%;
 }
 
@@ -375,7 +409,6 @@ blockquote {
  * and overflow that we removed from <pre>.
  */
 .gatsby-highlight {
-  background-color: ##080707;
   margin: 0.5em 0;
   padding: 1em;
   overflow: auto;
@@ -399,3 +432,25 @@ blockquote {
   padding-left: 2.8em; /* 3 */
 }
 
+.topbackground {
+  display:block;
+  width: 100%;
+  position: fixed;
+  background-color: #070707;
+  z-index: 97;
+  height: 7.5rem;
+  top: 0;
+
+}
+.fader {
+  display:block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -22;
+  top: 0;
+/* background: -moz-linear-gradient(top, rgba(7,7,7,1) 0%, rgba(7,7,7,1) 12%, rgba(7,7,7,1) 25%, rgba(7,7,7,1) 32%, rgba(7,7,7,0.92) 39%, rgba(7,7,7,0.8) 50%, rgba(7,7,7,0.69) 60%, rgba(7,7,7,0.52) 76%, rgba(7,7,7,0.51) 77%, rgba(7,7,7,0.02) 91%, rgba(7,7,7,0.02) 100%); */
+/* background: -webkit-linear-gradient(top, rgba(7,7,7,1) 0%,rgba(7,7,7,1) 12%,rgba(7,7,7,1) 25%,rgba(7,7,7,1) 32%,rgba(7,7,7,0.92) 39%,rgba(7,7,7,0.8) 50%,rgba(7,7,7,0.69) 60%,rgba(7,7,7,0.52) 76%,rgba(7,7,7,0.51) 77%,rgba(7,7,7,0.02) 91%,rgba(7,7,7,0.02) 100%); */
+/* background: linear-gradient(to bottom, rgba(7,7,7,1) 0%,rgba(7,7,7,1) 12%,rgba(7,7,7,1) 25%,rgba(7,7,7,1) 32%,rgba(7,7,7,0.92) 39%,rgba(7,7,7,0.8) 50%,rgba(7,7,7,0.69) 60%,rgba(7,7,7,0.52) 76%,rgba(7,7,7,0.51) 77%,rgba(7,7,7,0.02) 91%,rgba(7,7,7,0.02) 100%); */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#070707', endColorstr='#05070707',GradientType=0 ); */
+}

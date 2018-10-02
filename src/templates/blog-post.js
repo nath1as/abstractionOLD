@@ -13,7 +13,11 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
    const Abstraction = () =>
+        <div>
         <div className="title" >ABSTRACTION</div>
+        <div className="topback gradient-border"></div>
+        <div className="topbackground"></div>
+      </div>
 
     return (
     <div>
@@ -28,7 +32,6 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="contentAll">
         <h1 className="contentTitle">{post.frontmatter.title}</h1>
-        <h1 className="contentTitle">{post.frontmatter.category}</h1>
         <div className="contentPost" dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -38,7 +41,7 @@ class BlogPostTemplate extends React.Component {
         <p className="contentDate" > {post.frontmatter.date} </p>
         <Bio />
       </div>
-        <ul
+        <ul className="content-foot"
           style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -50,7 +53,7 @@ class BlogPostTemplate extends React.Component {
           <li>
             {
               previous &&
-              <Link to={previous.fields.slug} rel="prev">
+              <Link className="previous" to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             }
@@ -58,7 +61,7 @@ class BlogPostTemplate extends React.Component {
           <li>
             {
               next &&
-              <Link to={next.fields.slug} rel="next">
+              <Link className="next" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             }

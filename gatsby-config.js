@@ -1,4 +1,14 @@
+const myPlugin = (lunr) => (builder) => {
+  // removing stemmer
+  builder.pipeline.remove(lunr.stemmer)
+  builder.searchPipeline.remove(lunr.stemmer)
+  // or similarity tuning
+  builder.k1(1.3)
+  builder.b(0)
+}
+
 module.exports = {
+
   siteMetadata: {
     title: 'Abstraction',
     author: 'nathias',
