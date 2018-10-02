@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
     const Menu = () =>
           <menu className="menu">
             <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
-            <div className="topback"></div>
+            <div className="topback gradient-border"></div>
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
                   <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís </button>
           </menu>
