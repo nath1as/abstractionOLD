@@ -4,7 +4,6 @@ import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,7 +14,7 @@ class BlogPostTemplate extends React.Component {
    const Abstraction = () =>
         <div>
         <div className="title" >ABSTRACTION</div>
-        <div className="topback gradient-border"></div>
+        <div className="topback "></div>
         <div className="topbackground"></div>
       </div>
 
@@ -33,23 +32,11 @@ class BlogPostTemplate extends React.Component {
         <div className="contentAll">
         <h1 className="contentTitle">{post.frontmatter.title}</h1>
         <div className="contentPost" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr />
         <p className="contentDate" > {post.frontmatter.date} </p>
         <Bio />
       </div>
-        <ul className="content-foot"
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul className="content-foot" >
           <li>
             {
               previous &&

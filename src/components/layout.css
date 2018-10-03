@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
    }
 
 /* html { overflow-y: hidden; } */
@@ -22,6 +23,10 @@ a {
   color: #E3E3E3;
   outline:none;
 }
+a, a:focus, a:active {
+  outline: none !important;
+  border: none;
+}
 
 blockquote {
   color: #E3E3E3;
@@ -36,36 +41,36 @@ blockquote {
   /* background-color: #070707; */
   /* border-left: 0.2rem solid #F2F2F2; */
   /* border-right: 0.2rem solid #F2F2F2; */
-  margin: 3rem 23% 0;
-  margin-top: 9rem;
+  margin: 5rem 23% 0;
+  /* margin-top: 9rem; */
 }
 
 
 .contentAll {
   margin: 0;
-  bottom: 14rem;
   padding: 10rem;
   width: 200%;
   position: relative;
   right: 50%;
   background-color: #070707;
   overflow: hidden;
-  /* border-left: 0.2rem solid #F2F2F2; */
-  /* border-right: 0.2rem solid #F2F2F2; */
+  padding-bottom: 2rem;
+  color: #E3E3E3;
 }
+
 .content-foot {
-  height: 100%;
+  /* height: 100%; */
 
   margin: 0;
   bottom: 14rem;
-  padding: 10rem;
+  /* padding: 10rem; */
   width: 200%;
   height: 8rem;
   position: relative;
   right: 50%;
-  text-align: center;
+  /* text-align: center; */
   background-color: #070707;
-
+  padding-top: 2rem;
 }
 
 .previous {
@@ -78,7 +83,7 @@ blockquote {
 }
 .blogposts a div {
   background-color: #070707;
-  border: 0.18rem solid #000;
+  border: 0.18rem solid #111;
   border-radius: 20px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -129,9 +134,14 @@ blockquote {
 .contentTitle {
   /* font-family: 'Press Start 2P'; */
   font-family: 'Volkhov';
-  font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
+  /* color: red; */
+
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transform: scale(1, .92);
 }
 .contentDate {
   margin-top: 1rem;
@@ -139,10 +149,12 @@ blockquote {
 }
 .contentPost {
   font-size: 1.3rem;
+  font-family: "Volkhov";
 }
 .postContent {
   font-size: 1.2rem;
   font-size: 1rem;
+  font-family: "Volkhov";
 }
 
 .postContent:first-letter {
@@ -163,29 +175,58 @@ blockquote {
  h1 {
   font-family: 'Volkhov';
   font-size: 2rem;
+
+  letter-spacing: 0.4vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
 }
 
  h2 {
   font-family: 'Volkhov';
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
 }
 
  h3 {
   font-family: 'Volkhov';
-  font-size: 2rem;
+  font-size: 1.3rem;
+
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
 }
 
  h4 {
   font-family: 'Volkhov';
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
 }
+
 
  h5 {
   font-family: 'Volkhov';
-  font-size: 1.5rem;
-}
+  font-size: 1rem;
 
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
+}
 /* .menu { */
+ h6 {
+  font-family: 'Volkhov';
+  font-size: 1rem;
+
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transform: scale(1, .92);
+}
 /*   border: 2px solid red; */
 /*   position: fixed; */
 /*   z-index: 0; */
@@ -202,8 +243,9 @@ blockquote {
     top: 7.4rem;
     z-index: 999;
 }
-.title {
+.title:after {
     /* font-family: 'Press Start 2P'; */
+  display: block;
     font-family: 'Volkhov';
     transform: scale(1, .95);
     font-size: 2.3vw;
@@ -214,7 +256,6 @@ blockquote {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    /* -webkit-text-stroke: 3px #F2F2F2; */
     position: fixed;
     top: 2rem;
     height: 5.65rem;
@@ -227,12 +268,18 @@ blockquote {
     color: #070707;
     /* color: rgba(0, 0, 0, 0.1); */
     color: #E3E3E3;
+    outline: none;
+  visibility: visible;
+  content: "ABSTRACTION";
+  cursor: pointer;
+}
+.title{
+  visibility: hidden;
 }
 
 .title:hover {
-  cursor: pointer;
-  font-size: 2.32vw;
-  color: #fff;
+  /* color: #fff; */
+  /* transform: scale(1, .95); */
     /* padding-top: 2.08rem; */
 }
 
@@ -273,7 +320,7 @@ blockquote {
   background: none;
   font-family: 'Iceland';
   font-size: 2.3rem;
-  border-radius: 20px;
+  outline: none !important;
 }
 
 .praxis {
@@ -286,6 +333,7 @@ blockquote {
   font-family: 'Iceland';
   font-size: 2.3rem;
   border-radius: 20px;
+  outline: none !important;
 }
 /* separate div for the text then only move text on hover */
 .praxis {
@@ -437,7 +485,7 @@ blockquote {
   width: 100%;
   position: fixed;
   background-color: #070707;
-  z-index: 97;
+  z-index: 197;
   height: 7.5rem;
   top: 0;
 

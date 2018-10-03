@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 
@@ -25,7 +24,7 @@ class BlogIndex extends React.Component {
     const Menu = () =>
           <menu className="menu">
             <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
-            <div className="topback gradient-border"></div>
+            <div className="topback "></div>
             <div className="fader "></div>
             <div className="topbackground"></div>
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
@@ -76,7 +75,7 @@ class BlogIndex extends React.Component {
           const category = get(node, 'frontmatter.category') || node.fields.slug
           const tags = get(node, 'frontmatter.tags') || node.fields.slug
           return (
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
                     <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
@@ -108,7 +107,7 @@ class BlogIndex extends React.Component {
           const category = get(node, 'frontmatter.category') || node.fields.slug
           const tags = get(node, 'frontmatter.tags') || node.fields.slug
           return (
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
                     <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>

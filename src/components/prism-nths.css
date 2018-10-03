@@ -15,9 +15,12 @@ pre[class*="language-"] {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: normal;
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: 14px;
-    color: #76d9e6;
+    font-family: "Hack", monospace;
+    font-size: 1.5rem;
+    color: #4f97d7;
+    background-color: #000;
+    padding: 4rem;
+    border-radius: 20px;
     text-shadow: none;
 }
 pre[class*="language-"],
@@ -26,8 +29,6 @@ pre[class*="language-"],
 }
 pre[class*="language-"] {
     padding: 15px;
-    border-radius: 4px;
-    border: 1px solid #e1e1e8;
     overflow: auto;
 }
 
@@ -41,9 +42,6 @@ pre[class*="language-"] code {
 
 :not(pre)>code[class*="language-"] {
     padding: 0.15em 0.2em 0.05em;
-    border-radius: .3em;
-    border: 0.13em solid #7a6652;
-    box-shadow: 1px 1px 0.3em -0.1em #000 inset;
 }
 .token.namespace {
     opacity: .7;
@@ -52,41 +50,41 @@ pre[class*="language-"] code {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: #6f705e;
+    color: #333333;
 }
 .token.operator,
 .token.boolean,
 .token.number {
-    color: #a77afe;
+    color: #875faf;
 }
 .token.attr-name,
 .token.string {
-    color: #e6d06c;
+    color: #dd75dd;
 }
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-    color: #e6d06c;
+    color: #20ad80;
 }
 .token.selector,
 .token.inserted {
-    color: #a6e22d;
+    color: #ee3333;
 }
 .token.atrule,
 .token.attr-value,
 .token.keyword,
 .token.important,
 .token.deleted {
-    color: #ef3b7d;
+    color: #d75f87;
 }
 .token.regex,
 .token.statement {
-    color: #76d9e6;
+    color: #20ad80;
 }
 .token.placeholder,
 .token.variable {
-    color: #fff;
+    color: #070707;
 }
 .token.important,
 .token.statement,
@@ -94,7 +92,7 @@ pre[class*="language-"] code {
     font-weight: bold;
 }
 .token.punctuation {
-    color: #bebec5;
+    color: #20ad80;
 }
 .token.entity {
     cursor: help;
@@ -104,23 +102,23 @@ pre[class*="language-"] code {
 }
 
 code.language-markup {
-    color: #f9f9f9;
+    color: #070707;
 }
 code.language-markup .token.tag {
     color: #ef3b7d;
 }
 code.language-markup .token.attr-name {
-    color: #a6e22d;
+    color: #20ad80;
 }
 code.language-markup .token.attr-value {
-    color: #e6d06c;
+    color: #dd75dd;
 }
 code.language-markup .token.style,
 code.language-markup .token.script {
-    color: #76d9e6;
+    color: #875faf;
 }
 code.language-markup .token.script .token.keyword {
-    color: #76d9e6;
+    color: #875faf;
 }
 
 /* Line highlight plugin */
