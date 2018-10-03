@@ -56,6 +56,15 @@ blockquote {
   position: relative;
   display: block;
 }
+.contentAll div.contentPost ul {
+  margin-left: 4rem;
+}
+.contentAll div.contentPost ol {
+  margin-left: 4rem;
+}
+.contentAll > ul, .contentAll > ol {
+  margin-left: 4rem;
+}
 
 .content-background {
   background-color: #070707;
@@ -144,6 +153,7 @@ blockquote {
   font-family: 'Volkhov';
   margin-top: -4rem;
   margin-bottom: 2.5rem;
+  margin-left: 1rem;
   /* color: red; */
 
   letter-spacing: 0.3vw;
@@ -169,14 +179,23 @@ blockquote {
 .postContent:first-letter {
   margin-left: 4rem;
 }
-.contentPost > p:first-child:first-letter {
-  margin-left: 1rem;
-  padding-right: 0.4rem;
-  font-size: 6rem;
-  display: inline-block;
-  float: left;
-  color: white;
 
+.contentPost > p {
+  display: block;
+  margin-top: 5rem;
+}
+
+.contentPost > p:first-child::first-letter {
+  /* display: block; */
+  /* position: relative; */
+  margin-left: 1rem;
+  font-size: 6rem;
+  float: left;
+  margin-top: -1.2rem;
+  color: white;
+  padding-left: 0.2rem;
+
+  /* border: 0.18rem solid white; */
 }
 
 
@@ -187,6 +206,7 @@ blockquote {
   letter-spacing: 0.4vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 
  h2 {
@@ -196,6 +216,7 @@ blockquote {
   letter-spacing: 0.1vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 
  h3 {
@@ -205,6 +226,7 @@ blockquote {
   letter-spacing: 0.1vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 
  h4 {
@@ -215,6 +237,7 @@ blockquote {
   letter-spacing: 0.1vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 
 
@@ -225,6 +248,7 @@ blockquote {
   letter-spacing: 0.1vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 /* .menu { */
  h6 {
@@ -234,6 +258,7 @@ blockquote {
   letter-spacing: 0.1vw;
   text-transform: uppercase;
   transform: scale(1, .92);
+  margin-left: 1rem;
 }
 /*   border: 2px solid red; */
 /*   position: fixed; */
