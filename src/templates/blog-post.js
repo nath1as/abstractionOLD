@@ -21,40 +21,42 @@ class BlogPostTemplate extends React.Component {
     return (
     <div>
       <Link to={"/"} >
-      <Abstraction />
+        <Abstraction />
       </Link>
-      <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-        <div className="contentAll">
-        <h1 className="contentTitle">{post.frontmatter.title}</h1>
-        <div className="contentPost" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <p className="contentDate" > {post.frontmatter.date} </p>
-        <Bio />
+      <div className="content-background">
+        <Layout location={this.props.location}>
+          <Helmet
+            htmlAttributes={{ lang: 'en' }}
+            meta={[{ name: 'description', content: siteDescription }]}
+            title={`${post.frontmatter.title} | ${siteTitle}`}
+          />
+          <div className="contentAll">
+          <h1 className="contentTitle">{post.frontmatter.title}</h1>
+          <div className="contentPost" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr />
+          <p className="contentDate" > {post.frontmatter.date} </p>
+          <Bio />
+        </div>
+          <ul className="content-foot" >
+            <li>
+              {
+                previous &&
+                <Link className="previous" to={previous.fields.slug} rel="prev">
+                  {previous.frontmatter.title} →
+                </Link>
+              }
+            </li>
+            <li>
+              {
+                next &&
+                <Link className="next" to={next.fields.slug} rel="next">
+                  ← {next.frontmatter.title} 
+                </Link>
+              }
+            </li>
+          </ul>
+        </Layout>
       </div>
-        <ul className="content-foot" >
-          <li>
-            {
-              previous &&
-              <Link className="previous" to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            }
-          </li>
-          <li>
-            {
-              next &&
-              <Link className="next" to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            }
-          </li>
-        </ul>
-      </Layout>
     </div>
     )
   }
