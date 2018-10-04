@@ -22,14 +22,15 @@ class BlogIndex extends React.Component {
 
   render() {
     const Menu = () =>
+        <div>
+          <div className="topbackground">
+              <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
+          </div>
           <menu className="menu">
-            <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
-            <div className="topback "></div>
-            <div className="fader "></div>
-            <div className="topbackground"></div>
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
                   <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís </button>
           </menu>
+        </div>
 
 
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')

@@ -13,9 +13,9 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
    const Abstraction = () =>
         <div>
-        <div className="title" >ABSTRACTION</div>
-        <div className="topback "></div>
-        <div className="topbackground"></div>
+          <div className="topbackground">
+            <div className="title" >ABSTRACTION</div>
+          </div>
       </div>
 
     return (
