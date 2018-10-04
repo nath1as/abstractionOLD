@@ -26,10 +26,12 @@ class BlogIndex extends React.Component {
           <div className="topbackground">
               <div className="title" onClick={() => this.changeDecide("all") }>ABSTRACTION</div>
           </div>
+          <div className="wrapper">
           <menu className="menu">
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
                   <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís </button>
           </menu>
+        </div>
         </div>
 
 

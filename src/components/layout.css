@@ -344,12 +344,17 @@ blockquote {
 
 
 
-
+.wrapper {
+  position: fixed;
+  width: 100%;
+}
 .menu {
-    top: 22rem;
+    top: 8rem;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+
 }
 
 .theory {
