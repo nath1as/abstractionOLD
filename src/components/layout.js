@@ -9,7 +9,7 @@ class Template extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     return (
     <div>
-      <div className="blogposts" > {children} </div>
+      <div> {children} </div>
     </div>
     )
   }
