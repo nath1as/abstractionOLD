@@ -37,24 +37,12 @@ class BlogPostTemplate extends React.Component {
           <p className="contentDate" > {post.frontmatter.date} </p>
           <Bio />
         </div>
-          <ul className="content-foot" >
-            <li>
-              {
-                previous &&
-                <Link className="previous" to={previous.fields.slug} rel="prev">
-                  {previous.frontmatter.title} →
-                </Link>
-              }
-            </li>
-            <li>
-              {
-                next &&
-                <Link className="next" to={next.fields.slug} rel="next">
-                  ← {next.frontmatter.title} 
-                </Link>
-              }
-            </li>
+        <div className="content-foot">
+          <ul>
+            <li> { next && <Link className="next" to={next.fields.slug} rel="next"> ← {next.frontmatter.title} </Link> } </li>
+            <li> { previous && <Link className="prev" to={previous.fields.slug} rel="previous"> {previous.frontmatter.title} → </Link> } </li>
           </ul>
+        </div>
         </Layout>
       </div>
     </div>

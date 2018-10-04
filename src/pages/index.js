@@ -54,12 +54,12 @@ class BlogIndex extends React.Component {
           const tags = get(node, 'frontmatter.tags') || node.fields.slug
           return (
                 <Link to={node.fields.slug}>
-                  <div className="blogposts" key={node.fields.slug}>
+                  <div key={node.fields.slug}>
                     <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4>{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
                   </div>
                 </Link>
           )
@@ -84,7 +84,7 @@ class BlogIndex extends React.Component {
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4>{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
                   </div>
                 </Link>
           )
@@ -116,7 +116,7 @@ class BlogIndex extends React.Component {
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4>{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
                   </div>
                 </Link>
           )

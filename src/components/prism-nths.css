@@ -1,5 +1,5 @@
 /**
-* xonokai theme for JavaScript, CSS and HTML
+* nths theme for JavaScript, CSS and HTML
 * based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
 * license: MIT; http://moox.mit-license.org/
 */
@@ -160,3 +160,19 @@ pre[data-line] .line-highlight[data-end]:after {
     top: auto;
     bottom: .4em;
 }
+
+.gatsby-highlight {
+  /* margin: 0.5em 0; */
+  margin: -6rem;
+  margin-top: 4rem;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  overflow: initial;
+  border: none;
+  min-width: 100%;
+}
+
