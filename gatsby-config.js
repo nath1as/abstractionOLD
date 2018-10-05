@@ -1,12 +1,3 @@
-const myPlugin = (lunr) => (builder) => {
-  // removing stemmer
-  builder.pipeline.remove(lunr.stemmer)
-  builder.searchPipeline.remove(lunr.stemmer)
-  // or similarity tuning
-  builder.k1(1.3)
-  builder.b(0)
-}
-
 module.exports = {
 
   siteMetadata: {
@@ -90,13 +81,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `abstraction`,
+        short_name: `abstraction`,
         start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
