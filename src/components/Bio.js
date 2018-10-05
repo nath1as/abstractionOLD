@@ -4,9 +4,9 @@ class Bio extends React.Component {
   render() {
     return (
       <div >
-        <p>⌥&nbsp;  {  }
-          <a href="https://nathias.id">
-            nathias
+        <p>⌥
+          <a className="bio" href="https://nathias.id">
+            ⊓🜁tӊi🜁ട
           </a>
         </p>
       </div>

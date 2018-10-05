@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 
-
 class BlogIndex extends React.Component {
   constructor(props) {
       super(props);
@@ -29,7 +28,7 @@ class BlogIndex extends React.Component {
           <div className="wrapper">
           <menu className="menu">
                   <button className="theory" onClick={() => this.changeDecide("theory") }>▲&nbsp;thΞ0riª</button>
-                  <button className="praxis" onClick={() => this.changeDecide("praxis") }>▼&nbsp;pƦaXís </button>
+                  <button className="praxis" onClick={() => this.changeDecide("praxis") }>pƦaXís&nbsp;▼</button>
           </menu>
         </div>
         </div>
@@ -55,11 +54,13 @@ class BlogIndex extends React.Component {
           return (
                 <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
-                    <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <div className="datewrap">
+                      <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                      <h4 className="date">{node.frontmatter.date}</h4>
+                  </div>
                   </div>
                 </Link>
           )
@@ -80,11 +81,13 @@ class BlogIndex extends React.Component {
           return (
                 <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
-                    <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <div className="datewrap">
+                      <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                      <h4 className="date">{node.frontmatter.date}</h4>
+                  </div>
                   </div>
                 </Link>
           )
@@ -112,11 +115,13 @@ class BlogIndex extends React.Component {
           return (
                 <Link to={node.fields.slug}>
                   <div key={node.fields.slug}>
-                    <small className="date">{node.frontmatter.date}</small>
                     <h4 className="category">{category}</h4>
                     <h3 className="postTitle">{title}</h3>
                     <p className="postContent" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                    <div className="datewrap">
+                      <h4 className="tags-wrap">{Object.values(tags).map( tag => <p className="tags">#{tag} </p> )}</h4>
+                      <h4 className="date">{node.frontmatter.date}</h4>
+                  </div>
                   </div>
                 </Link>
           )
