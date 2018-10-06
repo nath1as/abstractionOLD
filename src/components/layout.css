@@ -34,7 +34,6 @@ body {
   color: #323232;
   outline:none;
   box-shadow: none;
-
 }
 
 a, a:focus, a:active {
@@ -104,6 +103,10 @@ blockquote {
   transform: scale(1, .92);
   margin-left: 1rem;
   pointer-events: auto;
+}
+
+.content-foot a {
+  color: #333333;
 }
 
 .prev {
