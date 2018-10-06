@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   outline: none;
+  color: #E3E3E3;
    }
 
 body {
@@ -28,7 +29,7 @@ body {
   font-weight: 100;
 }
 
-a {
+.contentAll  a {
   text-decoration: none;
   color: #323232;
   outline:none;
@@ -40,9 +41,7 @@ a, a:focus, a:active {
   outline: none !important;
   border: none;
 }
-a:hover {
-  border: 0.18rem solid #070707;
-}
+
 .contentAll {
   margin-left: auto;
   margin-right: auto;
