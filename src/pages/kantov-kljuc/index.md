@@ -1,6 +1,6 @@
 ---
 title: "Kantov ključ metafizike"
-date: "2014-11-03T17:30:32.169Z"
+date: "2012-05-03T12:50:12.169Z"
 category: "theory"
 tags: ["Kant", "metafizika", "episemologija" ]
 
