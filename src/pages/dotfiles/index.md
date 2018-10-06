@@ -204,5 +204,5 @@ Installed scripts:
 
 
 
-btw, I use Arch
+BTW, I use Arch
 
