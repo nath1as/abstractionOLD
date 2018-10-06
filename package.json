@@ -55,7 +55,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/nath1as/abstraction"
   },
   "scripts": {
     "start": "serve pubic/",
