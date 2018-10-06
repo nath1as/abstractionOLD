@@ -165,15 +165,14 @@ div > div > div > div > a > div {
 .tags-wrap {
   display: flex;
   justify-content: center;
-  position: relative;
-  left: 6rem;
 }
 
 .tags {
   color: #444;
   font-size: 0.8rem;
   text-transform: lowercase;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+  line-height: 1.3rem;
 }
 .postTitle {
   font-family: 'Volkhov';
@@ -528,7 +527,6 @@ h6 {
     z-index: 100;
     pointer-events: auto;
 
-    max-height: 26rem;
     overflow: hidden;
   }
 
@@ -644,9 +642,14 @@ h6 {
 
   left: 0rem;
   }
+
+  .date {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 412px) {
+
   .title:after {
     pointer-events: auto ;
     font-size: 150%;
@@ -663,3 +666,30 @@ h6 {
 
 }
 
+@media only screen and (min-width: 1930px) {
+
+  .title:after{
+    font-size: 130%;
+  }
+  .title:hover:after {
+    font-size: 130%;
+  }
+
+  div > div div div a div {
+    margin: 3rem auto;
+    max-height: 56rem;
+    max-width: 50rem;
+  }
+
+  .theory {
+    margin-left: 30%;
+  }
+
+  .praxis {
+    margin-right: 30%;
+  }
+  .contentAll {
+    width: 40%;
+  }
+
+}
