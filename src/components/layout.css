@@ -227,9 +227,11 @@ div > div > div > div > a > div {
   position: relative;
   bottom: -6rem;
   display: inline;
+  color: #333;
 }
 pre {
   font-size: 0.3rem;
+  color: #333;
   line-height: 0.6rem;
 }
 
@@ -641,6 +643,10 @@ h6 {
   }
   .contentAll p, ul, ol {
     font-size: 1rem;
+  }
+  blockquote {
+    padding: 0;
+    margin: 4rem 0;
   }
 
 
