@@ -11,6 +11,7 @@
 body {
   color: #E3E3E3;
   background: url("../assets/nebulared.jpg");
+  /* background: url("../assets/starspurple.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -591,7 +592,6 @@ h6 {
       justify-content: space-between;
       align-items: center;
       margin-left: 0;
-      z-index: 199;
   }
 
   .theory {
