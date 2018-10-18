@@ -10,13 +10,13 @@
 
 body {
   color: #E3E3E3;
+  background-color: #070707;
   background: url("../assets/nebulared.jpg");
   /* background: url("../assets/starspurple.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #070707;
   pointer-events: none;
   overflow: hidden;
 }
@@ -53,6 +53,7 @@ a, a:focus, a:active {
   background-color: #070707;
   color: #E3E3E3;
   pointer-events: auto;
+  z-index: 999;
 }
 
 .contentAll div.contentPost ul {
@@ -405,6 +406,7 @@ h6 {
 .wrapper {
   position: fixed;
   width: 100%;
+
 }
 .menu {
     top: 8rem;
@@ -498,11 +500,12 @@ h6 {
   width: 100%;
   position: fixed;
   background-color: #070707;
-  z-index: 197;
+  z-index: 99;
   height: 6rem;
   top: 0;
   pointer-events: auto ;
 
+  background: #070707;
 }
 
 
