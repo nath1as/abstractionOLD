@@ -1,4 +1,4 @@
-# building abstraction blog
+# abstraction blog
 
-built with gatsby
+built with gatsby, react, graphQL
 
