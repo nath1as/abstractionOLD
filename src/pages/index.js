@@ -18,9 +18,7 @@ class BlogIndex extends React.Component {
     changeDecide(value) {
       this.setState( { decide: value } );
     }
-  componentWillMount() {
-    document.topbackground.style.backgroundColor = "#070707";
-    }
+
   render() {
     const Menu = () =>
         <div>
