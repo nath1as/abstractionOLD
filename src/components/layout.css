@@ -10,7 +10,7 @@
 
 body {
   color: #E3E3E3;
-  /* background-color: #070707; */
+  background-color: #070707;
   background: url("../assets/nebulared.jpg");
   /* background: url("../assets/starspurple.jpg"); */
   background-position: center center;
@@ -19,6 +19,7 @@ body {
   background-size: cover;
   pointer-events: none;
   overflow: hidden;
+  z-index: 0;
 }
 
 .not-found {
@@ -509,6 +510,19 @@ h6 {
   background: #070707;
 }
 
+.anothertopbackground {
+  display:block;
+  width: 1800;
+  position: fixed;
+  background-color: #070707;
+  z-index: 197;
+  height: 6rem;
+  top: 0;
+  pointer-events: auto ;
+  z-index: 0;
+
+  background: #070707;
+}
 
 @media only screen and (max-width: 1500px) {
 

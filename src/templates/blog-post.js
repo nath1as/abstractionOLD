@@ -14,7 +14,9 @@ class BlogPostTemplate extends React.Component {
    const Abstraction = () =>
         <div>
           <div className="topbackground">
+          <div className="anothertopbackground">
             <div className="title" >ABSTRACTION</div>
+          </div>
           </div>
       </div>
 
