@@ -511,16 +511,12 @@ h6 {
 }
 
 .anothertopbackground {
-  display:block;
   width: 1800;
-  position: fixed;
   background-color: #070707;
-  z-index: 197;
   height: 6rem;
   top: 0;
   pointer-events: auto ;
-  z-index: 0;
-
+  z-index: 2;
   background: #070707;
 }
 
