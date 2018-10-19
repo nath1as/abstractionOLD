@@ -19,7 +19,8 @@ body {
   background-size: cover;
   pointer-events: none;
   overflow: hidden;
-  z-index: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .not-found {
