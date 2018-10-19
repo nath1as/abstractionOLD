@@ -11,6 +11,19 @@
 body {
   color: #E3E3E3;
   background-color: #070707;
+  /* background: url("../assets/starspurple.jpg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+  margin-top: -4.4rem;
+
+}
+
+.bkg {
   background: url("../assets/nebulared.jpg");
   /* background: url("../assets/starspurple.jpg"); */
   background-position: center center;
@@ -18,9 +31,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
   pointer-events: none;
-  position: absolute;
-  z-index: 2;
+  margin-bottom: -9.4rem;
+  position: static;
 }
+
+.content-background-full {
+  margin-top: -2.5rem;
+  margin-bottom: -4.6rem;
+    background: #070707;
+    z-index: 99999;
+    display: block;
+    width: 100%;
+  }
 
 .not-found {
   display: block;
@@ -82,6 +104,8 @@ blockquote {
   height: 100%;
   margin-top: -4rem;
   z-index: 0;
+  display: block;
+  position: relative;
 }
 
 .content-foot ul {
@@ -123,6 +147,10 @@ blockquote {
 
 div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   margin-top: 10rem;
+  padding-top: 2rem;
+}
+div > div > div > div:last-child {
+  padding-bottom: 2rem;
 }
 
 div > div > div > div > a > div {
@@ -408,6 +436,7 @@ h6 {
 .wrapper {
   position: fixed;
   width: 100%;
+  margin-top: 4rem;
 
 }
 .menu {
@@ -572,6 +601,7 @@ h6 {
     color: #E3E3E3;
     pointer-events: auto;
   }
+
 
   .contentTitle {
     margin-top: 3rem;

@@ -13,8 +13,6 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
    const Abstraction = () =>
         <div>
-          <div className="anothertopbackground">
-          </div>
           <div className="topbackground">
             <div className="title" >ABSTRACTION</div>
           </div>
@@ -27,6 +25,7 @@ class BlogPostTemplate extends React.Component {
       </Link>
       <div className="content-background">
         <Layout location={this.props.location}>
+            <div className="content-background-full">
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             meta={[{ name: 'description', content: siteDescription }]}
@@ -44,6 +43,7 @@ class BlogPostTemplate extends React.Component {
             <li> { next && <Link className="next" to={next.fields.slug} rel="next"> ← {next.frontmatter.title} </Link> } </li>
             <li> { previous && <Link className="prev" to={previous.fields.slug} rel="previous"> {previous.frontmatter.title} → </Link> } </li>
           </ul>
+        </div>
         </div>
         </Layout>
       </div>

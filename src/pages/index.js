@@ -58,7 +58,7 @@ class BlogIndex extends React.Component {
                     const category = get(node, 'frontmatter.category') || node.fields.slug
                     const tags = get(node, 'frontmatter.tags') || node.fields.slug
                     return (
-                          <Link to={ node.fields.slug }>
+                          <Link  to={ node.fields.slug }>
                             <div key={ node.fields.slug }>
                               <h4 className="category">{ category }</h4>
                               <h3 className="postTitle">{ title }</h3>
