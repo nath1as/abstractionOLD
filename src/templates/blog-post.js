@@ -15,6 +15,7 @@ class BlogPostTemplate extends React.Component {
         <div>
           <div className="topbackground">
             <div className="title" >ABSTRACTION</div>
+            <a href="/"><div className="link-to-main"><a href="/"></a></div></a>
           </div>
       </div>
 

@@ -416,6 +416,22 @@ h6 {
   pointer-events: visible ;
 }
 
+.link-to-main {
+  display: block;
+  width: 50%;
+  height: 60%;
+
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  top: -4rem;
+
+}
+
+.link-to-main > a {
+  text-decoration: none;
+}
 
 .category {
   display: inline;
