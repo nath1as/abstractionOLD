@@ -13,10 +13,6 @@ body {
   color: #E3E3E3;
   background-color: #070707;
   /* background: url("../assets/starspurple.jpg"); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   pointer-events: none;
   position: relative;
   bottom: 4.4rem;
@@ -25,14 +21,15 @@ body {
 
 .bkg {
   background: url("../assets/nebulared.jpg");
-  /* background: url("../assets/starspurple.jpg"); */
   background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   pointer-events: none;
   position: relative;
-  /* top: 4.4rem; */
   z-index: 0;
 }
 
@@ -735,6 +732,10 @@ h6 {
     bottom: 1.2rem;
     border: none;
     width: 100%;
+  }
+
+  .bkg {
+    background-size:250%;
   }
 }
 
