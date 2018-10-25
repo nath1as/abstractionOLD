@@ -550,8 +550,9 @@ h6 {
   position: fixed;
   background-color: #070707;
   z-index: 197;
-  height: 9.5%;
+  /* height: 9.5%; */
   /* height: 6rem; */
+  /* height: 60px; */
   top: 0;
   pointer-events: auto ;
 
