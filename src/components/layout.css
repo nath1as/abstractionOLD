@@ -30,7 +30,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   pointer-events: none;
-  position: static;
+  position: relative;
+  /* top: 4.4rem; */
+  z-index: 0;
 }
 
 .content-background-full {
@@ -454,6 +456,7 @@ h6 {
   width: 100%;
   margin-top: 4rem;
 
+  z-index: 10;
 }
 .menu {
     position: relative;
@@ -461,6 +464,7 @@ h6 {
     justify-content: space-between;
     align-items: flex-end;
     pointer-events: auto;
+  z-index: 10;
 }
 
 .theory {
@@ -470,6 +474,7 @@ h6 {
   font-family: 'Iceland';
   font-size: 2.3rem;
   outline: none !important;
+  z-index: 10;
 }
 
 .praxis {
@@ -479,6 +484,7 @@ h6 {
   font-family: 'Iceland';
   font-size: 2.3rem;
   outline: none !important;
+  z-index: 10;
 }
 /* separate div for the text then only move text on hover */
 .praxis {
@@ -546,8 +552,7 @@ h6 {
   width: 100%;
   position: fixed;
   background-color: #070707;
-  z-index: 197;
-  /* height: 6rem; */
+  z-index: 2;
   height: 95px;
   top: 0;
   pointer-events: auto ;
