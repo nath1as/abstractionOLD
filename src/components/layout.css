@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Iceland|Volkhov|');
+@import url('https://fonts.googleapis.com/css?family=Iceland|Volkhov');
 @import url('//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
 
 * {
@@ -550,7 +550,8 @@ h6 {
   position: fixed;
   background-color: #070707;
   z-index: 197;
-  height: 6rem;
+  height: 9.5%;
+  /* height: 6rem; */
   top: 0;
   pointer-events: auto ;
 

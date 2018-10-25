@@ -40,12 +40,13 @@ class BlogIndex extends React.Component {
     const siteDescription = get( this, 'props.data.site.siteMetadata.description')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const decide = this.state.decide;
+    const id = String(get(this, 'props.data.allMarkdownRemark.edges.node.d'));
 
     if (decide === 'theory') {
       return (
         <div>
             <Menu />
-          <Layout location={this.props.location}>
+          <Layout key={ id } location={this.props.location}>
             <Helmet
               htmlAttributes={{ lang: 'en' }}
               meta={[{ name: 'description', content: siteDescription }]}
@@ -79,7 +80,7 @@ class BlogIndex extends React.Component {
       return (
         <div>
           <Menu />
-          <Layout location={this.props.location}>
+          <Layout key={ id } location={this.props.location}>
             <Helmet
               htmlAttributes={{ lang: 'en' }}
               meta={[{ name: 'description', content: siteDescription }]}
@@ -114,7 +115,7 @@ class BlogIndex extends React.Component {
     return (
       <div>
       <Menu />
-      <Layout location={this.props.location}>
+      <Layout key={ id } location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -160,6 +161,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          id
           excerpt(pruneLength: 450)
           fields {
             slug
