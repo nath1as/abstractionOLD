@@ -26,13 +26,13 @@ body {
 .bkg {
   background: url("../assets/nebulared.jpg");
   /* background: url("../assets/starspurple.jpg"); */
-  background-position: center center;
+  background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   pointer-events: none;
   margin-bottom: -9.4rem;
-  position: static;
+  position: fixed;
 }
 
 .content-background-full {
@@ -550,24 +550,14 @@ h6 {
   position: fixed;
   background-color: #070707;
   z-index: 197;
-  /* height: 9.5%; */
   /* height: 6rem; */
-  /* height: 60px; */
+  height: 95px;
   top: 0;
   pointer-events: auto ;
 
   background: #070707;
 }
 
-.anothertopbackground {
-  display: block;
-  position: fixed;
-  width: 100%;
-  background-color: #070707;
-  height: 6rem;
-  z-index: 0;
-  top: 0;
-}
 
 @media only screen and (max-width: 1500px) {
 
