@@ -454,8 +454,7 @@ h6 {
 .wrapper {
   position: fixed;
   width: 100%;
-  margin-top: 4rem;
-
+  top: 14rem;
   z-index: 10;
 }
 .menu {
@@ -577,8 +576,6 @@ h6 {
     margin-bottom: 1.5rem;
   }
 
-  .praxis {
-  }
 
   div > div div div a div {
     padding: 1rem 2rem;
@@ -639,7 +636,9 @@ h6 {
 
   .wrapper {
     z-index: 199;
+    top: 9rem;
   }
+
   .menu {
       top: -6.5rem;
       position: relative;
