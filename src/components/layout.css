@@ -31,7 +31,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   pointer-events: none;
-  margin-bottom: -9.4rem;
   position: static;
 }
 
