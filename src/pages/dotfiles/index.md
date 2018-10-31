@@ -201,6 +201,7 @@ Installed scripts:
 * lolcat
 * bash-pipes
 * curl parrot.live
+* httplab
 
 
 
