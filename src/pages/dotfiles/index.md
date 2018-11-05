@@ -202,6 +202,7 @@ Installed scripts:
 * bash-pipes
 * curl parrot.live
 * wuzz
+* jq
 
 
 
