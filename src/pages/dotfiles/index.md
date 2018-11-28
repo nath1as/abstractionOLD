@@ -203,7 +203,7 @@ Installed scripts:
 * curl parrot.live
 * wuzz
 * jq
-
+* pLam
 
 
 BTW, I use Arch
